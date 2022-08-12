@@ -7,12 +7,13 @@
 </head>
 
 <body class="page__body">
+  <!-- Шапка -->
   <header class="main-header">
     <a class="main-header__logo" href="#">
       <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
     </a>
     <nav class="main-nav">
-      <button class="main-header__toggle" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открть меню</span>
       </button>
       <div class="main-nav__wrapper">
@@ -33,54 +34,75 @@
       </div>
     </nav>
   </header>
-  <main class="main-catalog">
+  <!-- Основное содержание -->
+  <main class="catalog">
     <h1 class="visually-hidden">Галерея</h1>
-    <div class="main-catalog__greetings greetings-catalog">
-      <img src="img/logo-sedona-catalog.svg" alt="Седона">
+    <div class="catalog__greetings">
+      <img src="img/logo-sedona-catalog.svg" alt="Седона.">
     </div>
+    <!-- Галерея -->
     <section class="gallery">
       <div class="gallery__wrapper">
         <h2 class="gallery__title">Фото и Видео</h2>
         <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
-        <ul class="gallery__list">
-          <li class="gallery__item">
+        <div class="gallery__list">
+          <div class="gallery__item">
             <img src="img/open-space.jpg" alt="Горы на фоне заката.">
             <h3 class="gallery__subtitle">Неродные просторы</h3>
-            <p  class="gallery__author">Автор фото: <cite>Борис</cite></p>
-          </li>
-          <li class="gallery__item">
+            <p class="gallery__author">Автор фото: <cite>Борис</cite></p>
+            <button class="gallery__button button">Лайк</button>
+            <span>1350</span>
+          </div>
+          <div class="gallery__item">
             <img src="img/plants.jpg" alt="Цветы с желтыми цветками.">
             <h3 class="gallery__subtitle">Местная растительность</h3>
-            <p  class="gallery__author">Автор фото: <cite>Сергей</cite></p>
-          </li>
-          <li class="gallery__item">
+            <p class="gallery__author">Автор фото: <cite>Сергей</cite></p>
+            <button class="gallery__button button">Лайк</button>
+            <span>143</span>
+          </div>
+          <div class="gallery__item">
             <img src="img/road-north.jpg" alt="Серпантин.">
             <h3 class="gallery__subtitle">Дорога на север</h3>
-            <p  class="gallery__author">Автор фото: <cite>Петр</cite></p>
-          </li>
-          <li class="gallery__item">
+            <p class="gallery__author">Автор фото: <cite>Петр</cite></p>
+            <button class="gallery__button button">Лайк</button>
+            <span>96</span>
+          </div>
+          <div class="gallery__item">
             <img src="img/devils-bridge.jpg" alt="Горный мост.">
             <h3 class="gallery__subtitle">Мост дьявола</h3>
-            <p  class="gallery__author">Автор фото: <cite>Антон</cite></p>
-
-          </li>
-        </ul>
+            <p class="gallery__author">Автор фото: <cite>Антон</cite></p>
+            <button class="gallery__button button">Лайк</button>
+            <span>254</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Видео -->
+    <section  class="gallary-video">
+      <div class="gallary-video__wrapper">
+        <div class="gallary-video__inner">
+          <h2 class="visually-hidden">Видеопрезентация.</h2>
+          <div class="gallary-video__title">Все еще сомневаетесь?</div>
+          <p class="gallary-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <video src="#"></video>
       </div>
     </section>
   </main>
-  <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__contact contacts">
-        <a class="contacts__hashtag">#visitsedona</a>
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="contact">
+        <a class="contact__hashtag">#visitsedona</a>
       </div>
-      <div class="main-footer__social social">
+      <div class="social">
         <a class="social__link" href="https://vk.com/htmlacademy">Мы в Контакте</a>
         <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">Мы в Telegram</a>
         <a class="social__link" href="https://t.me/htmlacademy">Мы в YouTube</a>
       </div>
-      <div class="main-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
+      <div class="copyright">
+        <div class="copyright__text">Разработано</div>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
