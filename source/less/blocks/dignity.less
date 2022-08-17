@@ -8,12 +8,25 @@
   gap: 22px;
   padding: 23px 21px 52px 17px;
 
+  &--grey {
+    background-color: #EEEEEE;
+  }
+
 }
 
 .dignity__item {
   position: relative;
-  padding-left: 47px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  padding-left: 47px;
+
+  &--test {
+    padding: 0;
+  }
+
 }
 
 .dignity__icon {
@@ -31,4 +44,8 @@
 .dignity__text {
   text-transform: uppercase;
   color: #333333;
+
+  &--number {
+    margin-bottom: 27px;
+  }
 }
