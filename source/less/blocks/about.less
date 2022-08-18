@@ -1,11 +1,18 @@
 .about {
   width: 320px;
-  background-color: #ffffff;
-  padding: 32px 21px 16px 17px;
-  box-sizing: border-box;
 }
 
-.about__inner {}
+.about__inner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 32px 21px 16px 17px;
+
+  &--catalog {
+    padding: 33px 20px 42px;
+  }
+}
 
 .about__title {
   font-weight: 700;

@@ -11,25 +11,30 @@
   <!-- Шапка -->
   <header class="main-header">
     <a class="main-header__logo" href="#">
-      <img src="img/logo.svg" width="185" height="96" alt="Логотип Седоны.">
+      <img src="img/main-nav/logo.svg" width="185" height="96" alt="Логотип Седоны.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
+        <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z"
+            fill="#81B3D2" />
+        </svg>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="#">Главная</a>
+            <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="#">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">html academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
           </li>
         </ul>
       </div>
@@ -38,54 +43,107 @@
   <!-- Основное содержание -->
   <main class="catalog">
     <h1 class="visually-hidden">Галерея</h1>
-    <div class="catalog__greetings">
-      <img src="img/logo-sedona-catalog.svg" alt="Седона.">
-    </div>
+    <section class="greetings greetings--catalog ">
+      <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
+      <div class="greetings__inner greetings__inner--catalog">
+        <img class="" src="img/logo-sedona-catalog.svg" width="229" height="39" alt="Добро пожаловать в Седону.">
+      </div>
+    </section>
     <!-- Галерея -->
+    <section class="about">
+      <h2 class="visually-hidden">Фото и Видео</h2>
+      <div class="about__inner about__inner--catalog">
+        <div class="about__title">Фото и видео</div>
+        <div class="about__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
+          и экономике.</div>
+      </div>
+    </section>
     <section class="gallery">
-      <div class="gallery__wrapper">
-        <h2 class="gallery__title">Фото и Видео</h2>
-        <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-          политике и экономике.</p>
-        <div class="gallery__list">
-          <div class="gallery__item">
-            <img src="img/open-space.jpg" alt="Горы на фоне заката.">
-            <h3 class="gallery__subtitle">Неродные просторы</h3>
-            <p class="gallery__author">Автор фото: <cite>Борис</cite></p>
-            <button class="gallery__button button">Лайк</button>
+      <h2 class="visually-hidden">Галерея</h2>
+      <div class="gallery__list">
+        <div class="gallery__item">
+          <figure class="gallery__figure">
+            <img  class="gallery__image" src="img/gallary/open-space.jpg" alt="Горы на фоне заката.">
+            <figcaption class="gallery__subtitle">Неродные просторы</figcaption>
+          </figure>
+          <span class="gallery__author">Автор фото: Борис</span>
+          <div class="gallery_inner">
+            <button class="gallery__button">
+              <svg class="gallery__icon" aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".3"
+                  d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                  fill="#000" />
+              </svg>
+            </button>
             <span>1350</span>
           </div>
-          <div class="gallery__item">
-            <img src="img/plants.jpg" alt="Цветы с желтыми цветками.">
-            <h3 class="gallery__subtitle">Местная растительность</h3>
-            <p class="gallery__author">Автор фото: <cite>Сергей</cite></p>
-            <button class="gallery__button button">Лайк</button>
+        </div>
+        <div class="gallery__item">
+          <figure class="gallery__figure">
+            <img  class="gallery__image" src="img/gallary/plants.jpg" width="280" height="280" alt="Горы на фоне заката.">
+            <figcaption class="gallery__subtitle">Местная растительность</figcaption>
+          </figure>
+          <span class="gallery__author">Автор фото: Сергей</span>
+          <div class="gallery_inner">
+            <button class="gallery__button">
+              <svg class="gallery__icon" aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".3"
+                  d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                  fill="#000" />
+              </svg>
+            </button>
             <span>143</span>
           </div>
-          <div class="gallery__item">
-            <img src="img/road-north.jpg" alt="Серпантин.">
-            <h3 class="gallery__subtitle">Дорога на север</h3>
-            <p class="gallery__author">Автор фото: <cite>Петр</cite></p>
-            <button class="gallery__button button">Лайк</button>
+        </div>
+        <div class="gallery__item">
+          <figure class="gallery__figure">
+            <img  class="gallery__image" src="img/gallary/road-north.jpg" width="280" height="280" alt="Горы на фоне заката.">
+            <figcaption class="gallery__subtitle">Дорога на север</figcaption>
+          </figure>
+          <span class="gallery__author">Автор фото: Петр</span>
+          <div class="gallery_inner">
+            <button class="gallery__button">
+              <svg class="gallery__icon" aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".3"
+                  d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                  fill="#000" />
+              </svg>
+            </button>
             <span>96</span>
           </div>
-          <div class="gallery__item">
-            <img src="img/devils-bridge.jpg" alt="Горный мост.">
-            <h3 class="gallery__subtitle">Мост дьявола</h3>
-            <p class="gallery__author">Автор фото: <cite>Антон</cite></p>
-            <button class="gallery__button button">Лайк</button>
+        </div>
+        <div class="gallery__item">
+          <figure class="gallery__figure">
+            <img  class="gallery__image" src="img/gallary/devils-bridge.jpg" width="280" height="280" alt="Горы на фоне заката.">
+            <figcaption class="gallery__subtitle">Мост дьявола</figcaption>
+          </figure>
+          <span class="gallery__author">Автор фото: Антон</span>
+          <div class="gallery_inner">
+            <button class="gallery__button">
+              <svg class="gallery__icon" aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity=".3"
+                  d="m12.964 3.78-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62ZM2.09 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0ZM4.182 8.4H0V21h4.182V8.4Z"
+                  fill="#000" />
+              </svg>
+            </button>
             <span>254</span>
           </div>
         </div>
+
       </div>
     </section>
     <!-- Видео -->
-    <section  class="gallary-video">
+    <section class="gallary-video">
       <div class="gallary-video__wrapper">
         <div class="gallary-video__inner">
           <h2 class="visually-hidden">Видеопрезентация.</h2>
           <div class="gallary-video__title">Все еще сомневаетесь?</div>
-          <p class="gallary-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="gallary-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+            очередной раз!</p>
         </div>
         <video src="#"></video>
       </div>
