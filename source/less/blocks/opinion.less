@@ -1,13 +1,13 @@
 .opinion {
   width: 320px;
-}
-
-.opinion__wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  gap: 49px;
+  box-sizing: border-box;
   padding: 20px 20px 24px;
+
 }
 
 .opinion__title {
@@ -36,12 +36,10 @@
   height: 46px;
   background-color: #F2F2F2;
   border-radius: 50%;
+
+  &--checkbox {
+    border-radius: 0;
+  }
 }
 
-.opinion__input[type="checkbox"]:checked+.control-mark::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-color: #000000;
-  border-radius: 50%;
-}
+
