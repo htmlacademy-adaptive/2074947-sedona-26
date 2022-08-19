@@ -1,0 +1,42 @@
+.opinion {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 49px;
+  box-sizing: border-box;
+  padding: 20px 20px 24px;
+}
+
+.opinion__title {
+  .font-bold();
+  margin-bottom: 20px;
+}
+
+.opinion__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.opinion__control {
+  padding: 10px 0 10px 62px;
+  position: relative;
+}
+
+.control__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+
+  &--checkbox {
+    border-radius: 0;
+  }
+}
