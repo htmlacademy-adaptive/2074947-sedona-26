@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
     <a class="main-header__logo" href="#">
       <img src="img/main-nav/logo.svg" width="185" height="96" alt="Логотип Седоны.">
@@ -39,13 +41,14 @@
       </div>
     </nav>
   </header>
+
   <main class="main-container">
     <h1 class="visually-hidden">Седона, небольшой городок в аризоне.</h1>
     <section class="greetings">
       <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-      <div class="greetings__inner">
-        <img src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
-      </div>
+      <!-- <div class="greetings__inner"> -->
+        <img class="greetings__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+      <!-- </div> -->
     </section>
     <!-- О седоне  -->
     <section class="about">
@@ -57,7 +60,7 @@
     </section>
     <!-- Преимущества городок  -->
     <section class="advatage">
-      <div class="advatage__inner">
+      <div class="advatage__item">
         <h3 class="advatage__title">Настоящий городок</h3>
         <div class="advatage__text advatage__text--number">— №1 —</div>
         <div class="advatage__text">Седона — не аттракцион для туристов, там течёт своя жизнь</div>
@@ -115,10 +118,10 @@
     </section>
     <!-- Мост дьявола  -->
     <section class="advatage">
-      <div class="advatage__inner advatage__inner--reverse">
+      <div class="advatage__item advatage__item--reverse">
         <h3 class="advatage__title">Там есть мост дьявола</h3>
         <div class="advatage__text advatage__text--number">— №2 —</div>
-        <div class="advatage__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</div>
+        <div class="advatage__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
       </div>
       <img class="advatage__image" src="img/photo-bridge.jpg" width="320" height="260" alt="Городок в Седоне">
     </section>
@@ -205,6 +208,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>

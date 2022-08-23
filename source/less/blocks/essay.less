@@ -5,7 +5,18 @@
   flex-wrap: wrap;
   text-align: center;
   box-sizing: border-box;
-  padding: 24px 20px 24px;
+  padding: 24px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    align-items: center;
+    padding: 24px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding: 24px 120px;
+  }
 }
 
 .essay__title {
@@ -20,11 +31,31 @@
   margin-bottom: 56px;
   border: none;
   background-color: #f2f2f2;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
 }
 
 .essay__button {
   width: 281px;
   height: 58px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    align-self: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+    align-self: flex-start;
+    margin-left: 96px;
+  }
 }
 
 .essay__text {

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page__body">
@@ -25,10 +26,10 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="#">Фото и видео</a>
+            <a class="site-list__link site-list__link--current" href="#">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Форма отзыва</a>
@@ -54,16 +55,17 @@
       <h2 class="visually-hidden">Фото и Видео</h2>
       <div class="about__inner about__inner--catalog">
         <div class="about__title">Фото и видео</div>
-        <div class="about__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
+        <div class="about__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике
           и экономике.</div>
       </div>
     </section>
     <section class="gallery">
       <h2 class="visually-hidden">Галерея</h2>
       <div class="gallery__list">
-        <div class="gallery__item">
+        <div class="gallery__item gallery__item--first">
           <figure class="gallery__figure">
-            <img  class="gallery__image" src="img/gallary/open-space.jpg" alt="Горы на фоне заката.">
+            <img class="gallery__image" src="img/gallary/open-space.jpg" alt="Горы на фоне заката.">
             <figcaption class="gallery__subtitle">Неродные просторы</figcaption>
           </figure>
           <span class="gallery__author">Автор фото: Борис</span>
@@ -81,7 +83,8 @@
         </div>
         <div class="gallery__item">
           <figure class="gallery__figure">
-            <img  class="gallery__image" src="img/gallary/plants.jpg" width="280" height="280" alt="Горы на фоне заката.">
+            <img class="gallery__image" src="img/gallary/plants.jpg" width="280" height="280"
+              alt="Горы на фоне заката.">
             <figcaption class="gallery__subtitle">Местная растительность</figcaption>
           </figure>
           <span class="gallery__author">Автор фото: Сергей</span>
@@ -99,7 +102,8 @@
         </div>
         <div class="gallery__item">
           <figure class="gallery__figure">
-            <img  class="gallery__image" src="img/gallary/road-north.jpg" width="280" height="280" alt="Горы на фоне заката.">
+            <img class="gallery__image" src="img/gallary/road-north.jpg" width="280" height="280"
+              alt="Горы на фоне заката.">
             <figcaption class="gallery__subtitle">Дорога на север</figcaption>
           </figure>
           <span class="gallery__author">Автор фото: Петр</span>
@@ -117,7 +121,8 @@
         </div>
         <div class="gallery__item">
           <figure class="gallery__figure">
-            <img  class="gallery__image" src="img/gallary/devils-bridge.jpg" width="280" height="280" alt="Горы на фоне заката.">
+            <img class="gallery__image" src="img/gallary/devils-bridge.jpg" width="280" height="280"
+              alt="Горы на фоне заката.">
             <figcaption class="gallery__subtitle">Мост дьявола</figcaption>
           </figure>
           <span class="gallery__author">Автор фото: Антон</span>
@@ -140,12 +145,13 @@
       <h2 class="visually-hidden">Видеопрезентиция</h2>
       <div class="about__inner about__inner--catalog-video">
         <div class="about__title">Все еще сомневаетесь?</div>
-        <div class="about__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</div>
+        <div class="about__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+          раз!</div>
       </div>
-      <div class="about__video">
-        <video class="about__vid" src=""></video>
-      </div>
-    </section>
+      </section>
+      <section class="video">
+        <video class="video__item" src=""></video>
+      </section>
   </main>
   <!-- Подвал -->
   <footer class="footer">
@@ -192,6 +198,7 @@
       </div>
     </div>
   </footer>
+
 
 </body>
 

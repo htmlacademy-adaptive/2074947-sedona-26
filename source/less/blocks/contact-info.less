@@ -2,6 +2,16 @@
   width: 320px;
   box-sizing: border-box;
   padding: 20px 20px 59px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    padding: 46px 60px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    padding: 46px 120px 0;
+  }
 }
 
 .contact-info__form {
@@ -11,11 +21,24 @@
   text-align: center;
   box-sizing: border-box;
   gap: 64px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    gap: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    gap: 100px;
+  }
 }
 
 .contact-info__title {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .contact-info__list {
@@ -57,5 +80,9 @@
     background-image: url("../img/email-icon.svg");
     background-repeat: no-repeat;
     background-position: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
   }
 }
