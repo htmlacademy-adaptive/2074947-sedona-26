@@ -1,5 +1,13 @@
 .gallery {
   width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .gallery__list {
@@ -9,12 +17,40 @@
   text-align: center;
   gap: 25px;
   padding: 24px 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    gap: 0;
+    padding: 20px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .gallery__item {
   display: flex;
   flex-direction: column;
   text-align: start;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+
+  &--first {
+    @media (min-width: @tablet-width) {
+      width: 648px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+    }
+  }
 }
 
 .gallery__figure {
