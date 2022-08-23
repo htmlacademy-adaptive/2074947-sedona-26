@@ -1,5 +1,13 @@
 .footer {
   width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .footer__wrapper {
@@ -8,6 +16,13 @@
   flex-wrap: wrap;
   text-align: center;
   padding: 29px 80px 23px 84px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding: 36px 83px 36px 45px;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .contact {

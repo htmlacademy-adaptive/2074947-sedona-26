@@ -1,5 +1,13 @@
 .dignity {
   width: 320px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .dignity__inner {
@@ -7,6 +15,12 @@
   flex-direction: column;
   gap: 22px;
   padding: 23px 21px 52px 17px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+  }
 
   &--grey {
     background-color: #eeeeee;
@@ -17,10 +31,19 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
   box-sizing: border-box;
-  flex-wrap: wrap;
   padding-left: 47px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 
   &--test {
     padding: 0;
@@ -31,12 +54,20 @@
   position: absolute;
   left: 0;
   top: 0;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
 }
 
 .dignity__title {
   .font-bold();
   margin: 0;
   margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .dignity__text {
